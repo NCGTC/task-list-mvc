@@ -49,19 +49,11 @@ namespace TaskListMvc.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                try
-                {
-                    db.Tasks.Attach(task);
-                    db.Entry(task).Property(t => t.IsDone).IsModified = true;
-                    db.Configuration.ValidateOnSaveEnabled = false;
-                    db.SaveChanges();
-                    return JsonSuccess(new { task = task });
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                    throw;
-                } 
+                db.Tasks.Attach(task);
+                db.Entry(task).Property(t => t.IsDone).IsModified = true;
+                db.Configuration.ValidateOnSaveEnabled = false;
+                db.SaveChanges();
+                return JsonSuccess(new { task = task });
             }
             return JsonError("Model is invalid");
         }
