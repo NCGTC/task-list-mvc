@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{79856A9B-5076-40B5-8E06-8EA04414597D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskListMvc.Web", "TaskListMvc.Web\TaskListMvc.Web.csproj", "{E475D685-C45C-405C-B556-54B73D8414C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskListMvc.Model", "TaskListMvc.Model\TaskListMvc.Model.csproj", "{FC51527A-68F0-4E07-9920-700E92FBC53A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskListMvc.Data", "TaskListMvc.Data\TaskListMvc.Data.csproj", "{8FA6D672-9371-40AD-87EB-C9868039FF00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E475D685-C45C-405C-B556-54B73D8414C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E475D685-C45C-405C-B556-54B73D8414C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E475D685-C45C-405C-B556-54B73D8414C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E475D685-C45C-405C-B556-54B73D8414C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC51527A-68F0-4E07-9920-700E92FBC53A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC51527A-68F0-4E07-9920-700E92FBC53A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC51527A-68F0-4E07-9920-700E92FBC53A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC51527A-68F0-4E07-9920-700E92FBC53A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA6D672-9371-40AD-87EB-C9868039FF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA6D672-9371-40AD-87EB-C9868039FF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA6D672-9371-40AD-87EB-C9868039FF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA6D672-9371-40AD-87EB-C9868039FF00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

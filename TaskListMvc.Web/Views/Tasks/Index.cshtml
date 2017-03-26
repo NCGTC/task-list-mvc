@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "My Task List";
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/tasks")
+}
+
+<div ng-controller="taskIndexController">
+    <form class="well" ng-submit="createTask($event)">
+        <input type="text" class="form-control" 
+               name="title" ng-model="title"
+               placeholder="Add Task...">
+    </form>
+    <div class="container">
+        <div class="row task-row" ng-repeat="task in tasks">
+            <div class="col-md-1" ng-click="updateTask(task, $event)">
+                <input type="checkbox" ng-model="task.isDone">
+            </div>
+            <div class="col-md-7">
+                {{task.title}}
+            </div>
+            <div class="col-md-4" ng-click="deleteTask(task, $event)">
+                <button class="btn btn-danger">
+                    Delete
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
